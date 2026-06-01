@@ -1,12 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap");
 
 :root {
-  --color-primary: #B7102A;
-  --color-primary-gradient: linear-gradient(135deg, #B7102A 0%, #FF0576 100%);
-  --color-text: #001B3C;
-  --color-surface: #F9F9FF;
-  --color-background: #FFFEFA;
-  --font-main: 'Lexend', sans-serif;
+  --color-primary: #b7102a;
+  --color-primary-gradient: linear-gradient(135deg, #b7102a 0%, #ff0576 100%);
+  --color-text: #001b3c;
+  --color-surface: #f9f9ff;
+  --color-background: #fffefa;
+  --font-main: "Lexend", sans-serif;
 }
 
 * {
@@ -239,7 +239,12 @@ a {
   z-index: 2;
   display: block;
   border-radius: 50%;
-  background: radial-gradient(circle at 34% 35%, #ff0576 0 18%, #e6005a 42%, #c90035 100%);
+  background: radial-gradient(
+    circle at 34% 35%,
+    #ff0576 0 18%,
+    #e6005a 42%,
+    #c90035 100%
+  );
 }
 
 .hero-bubble-large {
@@ -324,7 +329,10 @@ a {
   box-shadow: 0 8px 16px rgba(183, 16, 42, 0.16);
   font-size: 20px;
   font-weight: 800;
-  transition: transform 180ms ease, box-shadow 180ms ease, filter 180ms ease;
+  transition:
+    transform 180ms ease,
+    box-shadow 180ms ease,
+    filter 180ms ease;
 }
 
 .about-badges span:hover,
@@ -367,7 +375,9 @@ a {
   border-radius: 8px;
   color: var(--color-surface);
   background: var(--color-primary);
-  transition: transform 180ms ease, box-shadow 180ms ease;
+  transition:
+    transform 180ms ease,
+    box-shadow 180ms ease;
 }
 
 .recommendation-card:hover {
@@ -378,8 +388,9 @@ a {
 .recommendation-card img {
   display: block;
   width: 110px;
-  height: 96px;
+  height: 110px;
   object-fit: cover;
+  object-position: center;
 }
 
 .recommendation-card h3,
@@ -442,7 +453,9 @@ a {
   color: var(--color-primary);
   background: var(--color-background);
   box-shadow: 0 2px 11px rgba(0, 27, 60, 0.2);
-  transition: transform 180ms ease, box-shadow 180ms ease;
+  transition:
+    transform 180ms ease,
+    box-shadow 180ms ease;
 }
 
 .ingredient-card:hover {
@@ -459,10 +472,41 @@ a {
   object-fit: cover;
 }
 
+.ingredient-card h3 {
+  padding-top: 0;
+  margin-bottom: 8px;
+  font-size: 1.75rem;
+  color: var(--color-primary);
+}
+
+.ingredient-subtitle {
+  margin: 0 0 16px;
+  font-size: 0.95rem;
+  color: #666;
+  line-height: 1.5;
+  font-weight: 500;
+}
+
+.ingredient-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.ingredient-tags span {
+  background: #f3e8ff;
+  color: #6b21a8;
+  padding: 6px 12px;
+  border-radius: 999px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  display: inline-block;
+}
+
 .ingredient-card p {
-  max-width: 210px;
-  margin: 8px 0 0;
-  font-size: 11px;
+  max-width: none;
+  margin: 0;
+  font-size: 0.9rem;
   line-height: 1.05;
   font-weight: 500;
 }
@@ -516,7 +560,9 @@ a {
   border-radius: 9px;
   color: var(--color-surface);
   background: var(--color-primary-gradient);
-  transition: transform 180ms ease, box-shadow 180ms ease;
+  transition:
+    transform 180ms ease,
+    box-shadow 180ms ease;
 }
 
 .event-card:hover {
@@ -678,7 +724,9 @@ a {
   background: var(--color-background);
   box-shadow: 0 4px 16px rgba(0, 27, 60, 0.18);
   scroll-snap-align: start;
-  transition: transform 180ms ease, box-shadow 180ms ease;
+  transition:
+    transform 180ms ease,
+    box-shadow 180ms ease;
 }
 
 .carousel-button {
@@ -694,7 +742,9 @@ a {
   color: var(--color-primary);
   background: var(--color-background);
   cursor: pointer;
-  transition: transform 180ms ease, background 180ms ease;
+  transition:
+    transform 180ms ease,
+    background 180ms ease;
 }
 
 .carousel-button:hover,
@@ -752,7 +802,9 @@ a {
   border-radius: 12px;
   background: var(--color-background);
   box-shadow: 0 4px 14px rgba(0, 27, 60, 0.18);
-  transition: transform 180ms ease, box-shadow 180ms ease;
+  transition:
+    transform 180ms ease,
+    box-shadow 180ms ease;
 }
 
 .location-page-card:hover {
@@ -840,15 +892,15 @@ a {
   background: var(--color-background);
 }
 
-.eventpage-cards hr{
+.eventpage-cards hr {
   border: solid var(--color-primary) 1px;
   margin-top: 15px;
 }
 
-.event-price{
+.event-price {
   color: var(--color-primary);
   max-width: none !important;
-  font-weight: 700 !important; 
+  font-weight: 700 !important;
   font-size: 20px !important;
   text-align-last: right;
   padding-top: 10px;
@@ -915,7 +967,9 @@ a {
   background: var(--color-background);
   font: 500 16px/1 var(--font-main);
   outline: none;
-  transition: border-color 180ms ease, box-shadow 180ms ease;
+  transition:
+    border-color 180ms ease,
+    box-shadow 180ms ease;
 }
 
 .ritual-form input::placeholder {
@@ -1102,7 +1156,9 @@ a {
   background: var(--color-background);
   font: 500 13px/1.2 var(--font-main);
   outline: none;
-  transition: border-color 180ms ease, box-shadow 180ms ease;
+  transition:
+    border-color 180ms ease,
+    box-shadow 180ms ease;
 }
 
 .form-field select {
