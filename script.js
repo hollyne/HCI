@@ -146,11 +146,15 @@ if (joinForm) {
   };
 
   if (firstNameInput) {
-    firstNameInput.addEventListener("input", () => validateName(firstNameInput, "First name"));
+    firstNameInput.addEventListener("input", () =>
+      validateName(firstNameInput, "First name"),
+    );
   }
 
   if (lastNameInput) {
-    lastNameInput.addEventListener("input", () => validateName(lastNameInput, "Last name"));
+    lastNameInput.addEventListener("input", () =>
+      validateName(lastNameInput, "Last name"),
+    );
   }
 
   if (emailInput) {
@@ -169,7 +173,10 @@ if (joinForm) {
     passwordToggle.addEventListener("click", () => {
       const shouldShow = passwordInput.type === "password";
       passwordInput.type = shouldShow ? "text" : "password";
-      passwordToggle.setAttribute("aria-label", shouldShow ? "Hide password" : "Show password");
+      passwordToggle.setAttribute(
+        "aria-label",
+        shouldShow ? "Hide password" : "Show password",
+      );
     });
   }
 
@@ -183,6 +190,6 @@ if (joinForm) {
     }
 
     formMessage.textContent = "Success. Redirecting to MixWich...";
-    window.location.href = "index.html";
+    window.location.href = "home.html";
   });
 }
