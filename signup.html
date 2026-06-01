@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MixWich Sign Up</title>
+  <link rel="icon" type="image/png" href="img/Logo.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="login-page-body">
+  <header class="site-header login-header">
+    <nav class="login-navbar" aria-label="Login navigation">
+      <a class="brand login-brand" href="index.html" aria-label="MixWich home">
+        <img src="img/Logo.png" alt="MixWich">
+      </a>
+
+      <div class="login-nav-action">
+        <span>Already a member?</span>
+        <a href="login.html">Sign In</a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="login-main">
+    <section class="login-hero" aria-labelledby="login-title">
+      <div class="login-showcase" aria-hidden="true">
+        <img class="login-showcase-logo" src="img/Logo.png" alt="">
+        <img class="login-showcase-image" src="img/image.png" alt="">
+      </div>
+
+      <section class="login-card">
+        <h1 id="login-title">Join the Coven</h1>
+        <p>The lab is ready for your first creation</p>
+
+        <form class="login-form" id="join-form" novalidate>
+          <div class="login-form-row">
+            <div class="form-field">
+              <label for="first-name">First Name</label>
+              <input id="first-name" name="firstName" type="text" placeholder="E.g. Morticia" autocomplete="given-name">
+              <small class="field-error" aria-live="polite"></small>
+            </div>
+
+            <div class="form-field">
+              <label for="last-name">Last Name</label>
+              <input id="last-name" name="lastName" type="text" placeholder="E.g. Addams" autocomplete="family-name">
+              <small class="field-error" aria-live="polite"></small>
+            </div>
+          </div>
+
+          <div class="form-field">
+            <label for="join-email">Email Address</label>
+            <input id="join-email" name="email" type="email" placeholder="stacker@mixwich.com" autocomplete="email">
+            <small class="field-error" aria-live="polite"></small>
+          </div>
+
+          <div class="form-field">
+            <label for="join-password">Create Password</label>
+            <div class="password-field">
+              <input id="join-password" name="password" type="password" placeholder="Min. 8 characters" autocomplete="new-password">
+              <button class="password-toggle" type="button" aria-label="Show password">
+                <span></span>
+              </button>
+            </div>
+            <small class="field-error" aria-live="polite"></small>
+          </div>
+
+          <div class="form-field">
+            <label for="product-choice">Product Choices</label>
+            <select id="product-choice" name="productChoice">
+              <option value="">Select Menu</option>
+              <option value="classic-stack">Classic Stack</option>
+              <option value="spicy-ritual">Spicy Ritual</option>
+              <option value="garden-coven">Garden Coven</option>
+              <option value="custom-mix">Custom Mix</option>
+            </select>
+            <small class="field-error" aria-live="polite"></small>
+          </div>
+
+          <button class="login-submit" type="submit">Join the Pack</button>
+          <p class="form-message" id="join-form-message" aria-live="polite"></p>
+        </form>
+
+        <p class="login-card-footer">or do you have an account? <a href="login.html">Sign In</a></p>
+      </section>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

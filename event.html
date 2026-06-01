@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MixWich</title>
+  <link rel="icon" type="image/png" href="img/Logo.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="navbar" aria-label="Main navigation">
+      <a class="brand" href="index.html" aria-label="MixWich home">
+        <img src="img/Logo.png" alt="MixWich">
+      </a>
+
+      <ul class="nav-menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a class="active" href="event.html" aria-current="page">Event</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="location.html">Location</a></li>
+      </ul>
+
+      <a class="logout-link" href="login.html" aria-label="Logout">
+        <img src="img/logout.png" alt="">
+      </a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="event-preview" aria-labelledby="event-preview-title">
+      <div class="event-heading">
+        <h2 id="event-preview-title">MixWich Special Events</h2>
+        <p>
+          Join our flavorful celebrations, seasonal launches, and curated dining
+          moments made for sandwich lovers across every branch.
+        </p>
+      </div>
+
+      <div class="event-grid">
+        <article class="event-card event-card-featured">
+          <span class="event-badge">Live Events</span>
+          <h3>The Stacked Series</h3>
+          <p>
+            Where flavor meets the street. Join our exclusive pop-ups, sandwich
+            slams, and ritual workshops across the city.
+          </p>
+
+          <div class="event-action-row">
+            <a class="event-button" href="">View Schedule</a>
+            <span class="event-note">
+              <img src="img/feast.png" alt="">
+              12 Events This Month
+            </span>
+          </div>
+
+          <img class="event-deco" src="img/deco.png" alt="">
+        </article>
+
+        <article class="event-card">
+          <h3>Next Ritual</h3>
+          <p>
+            The sourdough Secrets Pop-Up
+          </p>
+          <a class="event-button" href="">View Schedule</a>
+        </article>
+
+        <article class="event-card">
+          <h3>Mastering<br>The Stack</h3>
+          <p>
+            Join our chief Mixologist for a 2-hour intensive on structural
+            integrity and flavor balancing.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section class="event-list" aria-label="Available events">
+        <div class="event-heading">
+          <h2 id="upcoming-vibes-title">Upcoming Vibes</h2>
+        </div>
+      <div class="ingredient-grid eventpage">
+        <article class="ingredient-card eventpage-cards">
+          <img src="img/image.png" alt="Nama Bahan 01">
+          <h3>Nama Acara 01</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tristique.</p>
+          <hr>
+          <p class="event-price">Rp 100.000</p>
+        </article>
+        <article class="ingredient-card eventpage-cards">
+          <img src="img/image.png" alt="Nama Bahan 01">
+          <h3>Nama Bahan 01</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tristique.</p>
+          <hr>
+          <p class="event-price">Rp 100.000</p>
+        </article>
+        <article class="ingredient-card eventpage-cards">
+          <img src="img/image.png" alt="Nama Bahan 01">
+          <h3>Nama Bahan 01</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tristique.</p>
+          <hr>
+          <p class="event-price">Rp 100.000</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="ritual-signup" aria-labelledby="ritual-signup-title">
+      <div class="ritual-card">
+        <h2 id="ritual-signup-title">Never Miss a Ritual</h2>
+        <p>
+          Get notified about secret menus, early-bird tickets, and member-only
+          events before they hit the general public.
+        </p>
+
+        <form class="ritual-form" action="">
+          <label for="ritual-email">Email address</label>
+          <input
+            id="ritual-email"
+            name="email"
+            type="email"
+            placeholder="Enter your email address"
+            required
+          >
+          <button class="hero-button" type="submit">Join the Pack</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <img src="img/Logo.png" alt="MixWich">
+    <p>&copy; 2026 MixWich. Freshly Mixed. Magically Made.</p>
+    <nav aria-label="Footer navigation">
+      <a href="">Privacy Policy</a>
+      <a href="">Terms</a>
+      <a href="">Contact Us</a>
+    </nav>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
