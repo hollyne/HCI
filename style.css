@@ -338,7 +338,7 @@ a {
 .about-badges span:hover,
 .about-badges span:focus-visible {
   transform: translateY(-4px) scale(1.02);
-  box-shadow: 0 12px 22px rgba(183, 16, 42, 0.24);
+  box-shadow: 0 12px 22px #b7102a3d;
   filter: saturate(1.08);
 }
 
@@ -382,7 +382,7 @@ a {
 
 .recommendation-card:hover {
   transform: translateY(-3px);
-  box-shadow: 0 12px 22px rgba(183, 16, 42, 0.2);
+  box-shadow: 0 12px 22px #b7102a33;
 }
 
 .recommendation-card img {
