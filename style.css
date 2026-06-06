@@ -1112,26 +1112,19 @@ a {
   justify-items: center;
 }
 
-.login-showcase-logo {
-  display: block;
-  width: min(300px, 80%);
-  height: auto;
-  margin-bottom: 18px;
-}
-
 .login-showcase-image {
   display: block;
-  width: min(300px, 80%);
-  aspect-ratio: 1.25;
-  border-radius: 14px;
-  object-fit: cover;
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  object-fit: contain;
 }
 
 .login-card {
   padding: 38px 50px 46px;
   border-radius: 16px;
   background: var(--color-background);
-  box-shadow: 0 6px 18px rgba(0, 27, 60, 0.2);
+  box-shadow: 0 6px 18px #001b3c33;
 }
 
 .login-card h1 {
